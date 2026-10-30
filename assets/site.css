@@ -415,3 +415,20 @@ img { max-width: 100%; height: auto; }
     .car-track { height: 340px; }
     .banner { height: 200px; }
 }
+
+/* 2026-10-30 phone header fix (same overflow guard as bearings):
+   tablet/phone header is strictly one line: logo shrinks and
+   truncates, language buttons never wrap, burger is fixed-size
+   and can never be pushed off-screen. */
+@media (max-width: 1024px) {
+    .nav { gap: 10px; flex-wrap: nowrap; }
+    .logo { flex: 1 1 auto; min-width: 0; font-size: 19px; }
+    .logo small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .lang { flex: none; }
+    .lang a { white-space: nowrap; padding: 6px 10px; }
+    .burger { flex: none; width: 42px; height: 42px; }
+}
+@media (max-width: 480px) {
+    .logo { font-size: 17px; }
+    .lang a { padding: 5px 8px; font-size: 12.5px; }
+}
