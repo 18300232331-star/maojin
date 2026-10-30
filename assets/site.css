@@ -352,3 +352,27 @@
 /* ---- 20261026a: 详情页 Get a Quote 按钮 ---- */
 .pd-quote{text-align:center;margin:20px 0 0}
 .pd-quote .btn{min-width:260px}
+
+/* 2026-10-30 header adaptive fix: same laptop-gap problem as bearings.
+   Desktop header had a fixed 22-24px gap with no tuning between
+   900px (tablet grids) and full desktop, so long English labels
+   overflowed the 1140px wrap on laptop widths. These rules keep
+   the header on one line and shrink spacing fluidly; the existing
+   hamburger menu at 640px (phone) is unchanged. */
+.nav { flex-wrap: nowrap; gap: 20px; }
+nav.main { flex: 1 1 auto; justify-content: flex-end; gap: clamp(12px, 1.8vw, 22px); flex-wrap: nowrap; }
+nav.main a { white-space: nowrap; }
+.logo { flex: none; }
+.lang { flex: none; }
+.wrap { max-width: min(1200px, 100%); }
+@media (max-width: 1280px) {
+    nav.main { gap: 16px; }
+    nav.main a { font-size: 14.5px; }
+    .nav { gap: 16px; }
+}
+@media (max-width: 1024px) {
+    .logo { font-size: 19px; }
+    nav.main { gap: 14px; }
+    nav.main a { font-size: 14px; }
+    .nav-tel { display: none; }
+}
