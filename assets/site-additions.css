@@ -20,3 +20,11 @@
 /* 2026-11-01: language menu usable without JS + scrollable on short screens */
 .lang:focus-within .lang-menu{display:block}
 .lang-menu{max-height:70vh;overflow-y:auto}
+
+/* 2026-11-01 layout fix3: news-grid fillers + centre lone gallery figure (desktop 3-col) */
+.news-card.card-filler{display:flex;align-items:center;min-height:280px}
+.news-card.card-filler .body{text-align:center;width:100%;padding:28px 22px}
+.news-card.card-filler .body h3{font-size:19px;line-height:1.4;margin:0 0 10px}
+.news-card.card-filler .body p{color:#5b6d7d;margin:0 0 14px}
+@media(min-width:900px){.gallery figure:last-child:nth-child(4){grid-column:2}}
+@media(max-width:640px){.news-card.card-filler{min-height:0}}
