@@ -82,7 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="addr">No. 118, Qiyuan Industrial Science Park, Chengyang District, Qingdao, Shandong, China</p>
       <p style="margin-top:18px"><a class="btn ghost" style="margin-left:0" href="/th/contact.html">ติดต่อเรา</a></p>
     </div>
-    <form class="lead" action="https://formspree.io/f/mbggadgd" data-notify-email="zzq@huosidun.com.cn" method="post" novalidate>
+    <form class="lead" action="https://formspree.io/f/mbggadgd" data-notify-email="zzq@huosidun.com.cn" method="post" novalidate><input type="hidden" name="source" value="毛巾询盘 · https://qizhonggj.cn/th/products/pool-side-bath-mat.html">
       <h3>ขอใบเสนอราคา</h3>
       <p>แจ้งขนาด น้ำหนัก จำนวน และความต้องการโลโก้ — ทีมส่งออกของเราจะตอบกลับพร้อมใบเสนอราคาภายใน 24 ชั่วโมง</p>
       <input type="hidden" name="lang" value="th" />
@@ -210,7 +210,7 @@ root.querySelector(".cm-chat-send").addEventListener("click", function () {
   fetch("https://formspree.io/f/mbggadgd", {
     method: "POST",
     headers: { "Content-Type": "application/json", "Accept": "application/json" },
-    body: JSON.stringify({ message: msg.value, contact: ct.value, _subject: "Website chat message", page: location.href })
+    body: JSON.stringify({ message: msg.value, contact: ct.value, _subject: "毛巾询盘·网站聊天", source: "毛巾询盘 · https://qizhonggj.cn", page: location.href })
   }).then(function (r) {
     if (!r.ok) throw new Error("bad");
     done.hidden = false; msg.value = ""; ct.value = "";
