@@ -61,7 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul><li>بيع بالجملة للفنادق والمنتجعات — أطقم مناشف وبياضات كاملة من مورد واحد</li><li>شعار مخصص: تطريز ونسيج جاكار وطباعة وصباغة ألوان Pantone</li><li>العينة أولًا ثم الإنتاج الكمي بعد موافقتك</li></ul>
     <p class="addr">No. 118, Qiyuan Industrial Science Park, Chengyang District, Qingdao, Shandong, China</p>
   </div>
-  <form class="lead" action="https://formspree.io/f/mbggadgd" data-notify-email="zzq@huosidun.com.cn" method="post" novalidate>
+  <form class="lead" action="https://formspree.io/f/mbggadgd" data-notify-email="zzq@huosidun.com.cn" method="post" novalidate><input type="hidden" name="source" value="毛巾询盘 · https://qizhonggj.cn/ar/contact.html">
     <h3>اطلب عرض سعر</h3>
     <p>أخبرنا بالمقاس والوزن والكمية ومتطلبات الشعار — سيرد فريق التصدير لدينا بعرض سعر خلال 24 ساعة.</p>
     <input type="hidden" name="lang" value="en" />
@@ -187,7 +187,7 @@ root.querySelector(".cm-chat-send").addEventListener("click", function () {
   fetch("https://formspree.io/f/mbggadgd", {
     method: "POST",
     headers: { "Content-Type": "application/json", "Accept": "application/json" },
-    body: JSON.stringify({ message: msg.value, contact: ct.value, _subject: "Website chat message", page: location.href })
+    body: JSON.stringify({ message: msg.value, contact: ct.value, _subject: "毛巾询盘·网站聊天", source: "毛巾询盘 · https://qizhonggj.cn", page: location.href })
   }).then(function (r) {
     if (!r.ok) throw new Error("bad");
     done.hidden = false; msg.value = ""; ct.value = "";
