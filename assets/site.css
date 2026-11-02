@@ -432,3 +432,6 @@ img { max-width: 100%; height: auto; }
     .logo { font-size: 17px; }
     .lang a { padding: 5px 8px; font-size: 12.5px; }
 }
+
+/* 2026-11-02 audit fix: allow spec-table headers to wrap so long non-EN headers do not overflow narrow screens */
+.spec-table th{white-space:normal;overflow-wrap:break-word}
