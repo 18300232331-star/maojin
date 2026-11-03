@@ -229,17 +229,17 @@
   .prod-count{color:var(--muted);font-size:14px;margin:0 0 22px}
 
   /* floating rail — socials, WhatsApp, back to top */
-  .float-rail{position:fixed;right:16px;bottom:16px;z-index:90;display:flex;flex-direction:column;gap:9px;align-items:center}
-  .float-rail a,.float-rail button{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-    background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);color:var(--brand);cursor:pointer;padding:0}
+  .float-rail{position:fixed;right:16px;bottom:16px;z-index:90;display:flex;flex-direction:column;gap:14px;align-items:center}
+  .float-rail a,.float-rail button{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    background:var(--surface);border:1px solid var(--line);box-shadow:0 10px 28px rgba(0,0,0,.30),0 0 0 2px rgba(255,255,255,.85);color:var(--brand);cursor:pointer;padding:0}
   .float-rail a:hover,.float-rail button:hover{transform:translateY(-2px)}
-  .float-rail svg{width:22px;height:22px;flex:none}
+  .float-rail svg{width:26px;height:26px;flex:none}
   .float-rail .wa{background:#25d366;border-color:#25d366;color:#fff}
-  .float-rail .to-top{background:var(--brand);border-color:var(--brand);color:#fff;font-size:20px;line-height:1;
+  .float-rail .to-top{background:var(--brand);border-color:var(--brand);color:#fff;font-size:24px;line-height:1;
     opacity:1;visibility:visible;transform:none}
   .float-rail .to-top.show{opacity:1;visibility:visible;transform:none;transition:opacity .25s ease,transform .25s ease}
   @media (prefers-reduced-motion: reduce){.float-rail a:hover,.float-rail button:hover{transform:none}}
-  @media (max-width:640px){.float-rail{right:10px;bottom:12px}.float-rail a,.float-rail button{width:42px;height:42px}}
+  @media (max-width:640px){.float-rail{right:10px;bottom:12px}.float-rail a,.float-rail button{width:52px;height:52px}}
 
   @media (max-width:900px){
     .grid3{grid-template-columns:repeat(2,1fr)}
@@ -435,3 +435,10 @@ img { max-width: 100%; height: auto; }
 
 /* 2026-11-02 audit fix: allow spec-table headers to wrap so long non-EN headers do not overflow narrow screens */
 .spec-table th{white-space:normal;overflow-wrap:break-word}
+
+/* uniform floating stack 2026-11-03: 56px buttons, 14px gaps, stronger shadow, gentle chat pulse */
+#cm-chat{bottom:156px}
+#cm-chat .cm-chat-btn{box-shadow:0 10px 28px rgba(0,0,0,.30),0 0 0 2px rgba(255,255,255,.85);animation:cmChatPulse 2.6s ease-out infinite}
+@keyframes cmChatPulse{0%{box-shadow:0 10px 28px rgba(0,0,0,.30),0 0 0 0 rgba(14,77,122,.35)}70%{box-shadow:0 10px 28px rgba(0,0,0,.30),0 0 0 14px rgba(14,77,122,0)}100%{box-shadow:0 10px 28px rgba(0,0,0,.30),0 0 0 0 rgba(14,77,122,0)}}
+@media (prefers-reduced-motion: reduce){#cm-chat .cm-chat-btn{animation:none}}
+@media (max-width:640px){#cm-chat{right:10px;bottom:144px}#cm-chat .cm-chat-btn{width:52px;height:52px}}
