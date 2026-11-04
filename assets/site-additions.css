@@ -28,3 +28,9 @@
 .news-card.card-filler .body p{color:#5b6d7d;margin:0 0 14px}
 @media(min-width:900px){.gallery figure:last-child:nth-child(4){grid-column:2}}
 @media(max-width:640px){.news-card.card-filler{min-height:0}}
+
+/* 2026-11-04: language dropdown clipping fix: site.css .lang carries
+   overflow:hidden (pill link-row style); the dropdown .lang-menu is a child
+   of .lang, so it was clipped invisible even with .open / :focus-within.
+   This later rule (same specificity, loaded after site.css) restores it. */
+.lang{overflow:visible}
