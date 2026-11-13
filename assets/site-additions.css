@@ -39,9 +39,9 @@ html,body{overflow-x:clip}
 
 /* 2026-11-04 batch1: inquiry checklist + key-info strip + extra CTAs (additive) */
 .cm-quote-check{border:1px solid #dde5ec;border-radius:10px;padding:16px 18px;margin:20px 0;background:#f7fafc}
-.cm-quote-check h2{margin:0 0 10px;font-size:19px}
+.cm-quote-check h2{margin:0 0 10px;font-size:19px;color:#0e4d7a}
 .cm-quote-check ul{margin:0 0 10px;padding-left:20px}
-.cm-quote-check li{margin:4px 0}
+.cm-quote-check li{margin:4px 0;color:#334155}
 .cm-quote-check .cm-qn{margin:0;color:#5b6d7d;font-size:14.5px}
 .cm-keystrip{width:100%;border-collapse:collapse;margin:16px 0}
 .cm-keystrip th,.cm-keystrip td{border:1px solid #dde5ec;padding:8px 10px;text-align:left;font-size:14.5px}
@@ -71,3 +71,5 @@ html,body{overflow-x:clip}
 .cm-faq summary{cursor:pointer;font-weight:600}
 .cm-related{max-width:1140px;margin:24px auto;padding:0 20px}
 .cm-related-links{display:flex;flex-wrap:wrap;gap:8px 16px}
+
+@media (max-width:600px){.cm-process ol{flex-direction:column;gap:4px 0}}

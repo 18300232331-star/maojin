@@ -179,7 +179,7 @@
 
   /* contact */
   .cta{background:var(--brand-deep);color:#eaf3fa}
-  .cta-in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;padding:60px 0}
+  .cta-in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;padding:60px 20px}
   .cta h2{color:#fff;font-size:29px;margin:0 0 10px}
   .cta p{color:#bcd6ea;margin:0 0 18px}
   .cta .tel-big{font-size:26px;font-weight:800;color:#fff;letter-spacing:.02em}
