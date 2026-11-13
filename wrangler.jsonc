@@ -1,0 +1,1 @@
+{"$schema":"node_modules/wrangler/config-schema.json","assets":{"directory":".","not_found_handling":"404-page"},"compatibility_date":"2026-11-10","name":"maojin","observability":{"enabled":true}}
