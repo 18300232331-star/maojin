@@ -42,7 +42,7 @@
   /* pages — each view stands alone */
   .page{display:none}
   .page.active{display:block}
-  section{padding:60px 0}
+  section{padding:40px 0}
   section.soft{background:var(--bg-soft)}
   .sec-head{max-width:640px;margin:0 0 36px}
   .sec-head.center{text-align:center;margin-left:auto;margin-right:auto}
@@ -179,7 +179,7 @@
 
   /* contact */
   .cta{background:var(--brand-deep);color:#eaf3fa}
-  .cta-in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;padding:60px 20px}
+  .cta-in{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:stretch;padding:60px 20px}
   .cta h2{color:#fff;font-size:29px;margin:0 0 10px}
   .cta p{color:#bcd6ea;margin:0 0 18px}
   .cta .tel-big{font-size:26px;font-weight:800;color:#fff;letter-spacing:.02em}
@@ -266,7 +266,7 @@
     .car-nav{display:none}
     .banner{height:220px}
     .banner.short{height:170px}
-    section{padding:44px 0}
+    section{padding:32px 0}
     .foot{grid-template-columns:1fr}
   }
 /* ---------- multi-page additions ---------- */
@@ -324,7 +324,7 @@
 .cat-others a{color:var(--brand);text-decoration:none;font-weight:600}
 .cat-others a:hover{text-decoration:underline}
 .cat-others a.on{color:var(--heading)}
-.sec-title{font-size:21px;margin:44px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.sec-title{font-size:21px;margin:16px 0 20px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 @media (max-width:900px){.grid2{grid-template-columns:1fr}}
 
 /* ---- 20261024a: T1 品牌小字 / T3 MOQ / T10 静态主视觉卖点 / 条款与质检 / 隐私 ---- */

@@ -73,3 +73,6 @@ html,body{overflow-x:clip}
 .cm-related-links{display:flex;flex-wrap:wrap;gap:8px 16px}
 
 @media (max-width:600px){.cm-process ol{flex-direction:column;gap:4px 0}}
+
+/* 20261122 audit fix #12: clamp card text with ellipsis instead of hard cut */
+.card p,.catnav-card p,.news-card p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
